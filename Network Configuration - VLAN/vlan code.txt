@@ -1,0 +1,25 @@
+vlan 10
+name IT
+exit
+vlan 20
+name HQ
+exit
+int fa0/1
+switchport access vlan 20
+switchport mode access
+exit
+int fa1/1
+switchport access vlan 20
+switchport mode access
+exit
+int fa3/1
+switchport access vlan 10
+switchport mode access
+exit
+int fa2/1
+switchport access vlan 10
+switchport mode access
+exit
+int fa4/1
+switchport mode trunk
+exit
