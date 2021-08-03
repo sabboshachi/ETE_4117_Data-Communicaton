@@ -1,1 +1,2 @@
-# ETE-4117 Data Communicaton
+# Network Configuration - VLAN
+
