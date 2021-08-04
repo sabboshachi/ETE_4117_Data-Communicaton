@@ -1,0 +1,12 @@
+Router>en
+Router#conf ter
+
+Router(config)#interface fastethernet 0/0
+Router(config-if)#no sh
+
+Router(config-if)#ip address 192.168.10.1 255.255.255.0
+Router(config-if)#ex
+Router(config)#ip dhcp pool Network1
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#dns-server 192.168.10.9
